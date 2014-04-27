@@ -1,0 +1,33 @@
+# Two escapes clear command line.
+"\e\e": "\C-a\C-k"
+#"\C-e":'clear\n'
+
+# Tab to menu complete
+"\t": menu-complete
+
+# Incremental searching with Up and Down and Left and Right
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+set completion-ignore-case On
+#set completion-prefix-display-length 2
+set expand-tilde on
+set convert-meta off
+set input-meta on
+set mark-directories on
+set output-meta on
+set show-all-if-ambiguous on
+set visible-stats on
+
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on 
+
+$if Bash
+    #do history expansion when space entered
+    Space: magic-space
+$endif
+

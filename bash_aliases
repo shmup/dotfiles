@@ -12,4 +12,4 @@ alias devsource='source /home/jared/code/dev/env/bin/activate'
 alias howdoi='howdoi -c'
 alias g='git'
 alias tmux="TERM=screen-256color-bce tmux"
-
+alias byte='python /home/jared/code/byte/byte.py'

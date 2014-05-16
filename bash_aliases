@@ -13,3 +13,4 @@ alias howdoi='howdoi -c'
 alias g='git'
 alias tmux="TERM=screen-256color-bce tmux"
 alias byte='python /home/jared/code/byte/byte.py'
+alias focuschrome='if test $(wmctrl -vxa chrome 2>&1 | wc -l) -eq 1; then google-chrome; fi'

@@ -6,10 +6,13 @@
 "\t": menu-complete
 
 # Incremental searching with Up and Down and Left and Right
+
+$if mode=emacs
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 "\e\e[C": forward-word
 "\e\e[D": backward-word
+$endif
 
 set completion-ignore-case On
 #set completion-prefix-display-length 2
@@ -31,3 +34,4 @@ $if Bash
     Space: magic-space
 $endif
 
+$include /etc/inputrc

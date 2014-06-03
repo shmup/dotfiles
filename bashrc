@@ -19,6 +19,9 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=20000
 
+# phpbrew
+source ~/.phpbrew/bashrc
+
 # android
 export ANDROID_HOME=/home/jared/.linuxbrew/opt/android-sdk
 export PATH=${PATH}:/home/jared/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools/

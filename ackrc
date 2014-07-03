@@ -19,6 +19,8 @@
 --ignore-dir=CKEditor
 --ignore-dir=finder
 --ignore-dir=editor
+--ignore-dir=Cache
+--ignore-dir=Zend
 --smart-case
 --sort-files
 --color

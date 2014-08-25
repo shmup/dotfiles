@@ -19,11 +19,15 @@ HISTFILESIZE=100000
 PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
 
 # phpbrew
+export PHPBRWE_SET_PROMPT=1
 source ~/.phpbrew/bashrc
 
 # android
 export ANDROID_HOME=/home/jared/.linuxbrew/opt/android-sdk
-export PATH=${PATH}:/home/jared/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools/
+export PATH=${PATH}:/home/jared/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools
+
+# npm
+export PATH="/home/jared/node_modules/.bin:$PATH"
 
 # brew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
@@ -168,3 +172,6 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1$(parse_git_dirty)]/"
 }
 export PS1='\u@\h \[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)$ '
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -1,5 +1,18 @@
 #!/bin/bash
 
+ix() {
+    if [ -t 0 ]; then
+        local filename="$1"
+        shift
+        if [ "$filename" == '--' ]; then
+            curl -n $* paste.rupa.co
+        else
+            curl -n -F "f:1=@$filename" $* paste.rupa.co
+        fi
+    else
+        curl -n -F 'f:1=<-' $* paste.rupa.co
+    fi
+}
 function tailapache {
     tail -f /var/log/apache2/error.log | sed '/.*PHP Notice.*/d;s/$/\n/'
 }

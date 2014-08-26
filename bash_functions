@@ -72,6 +72,10 @@ function stock {
     curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
 }
 
+function cursive {
+    coffee /home/jared/bin/cursive_unicode.coffee "$@" | xclip -selection clipboard
+}
+
 doing() {
   echo $(date "+%Y-%m-%d %H:%M:%S") - "$@" >> $HOME/.plan
 }

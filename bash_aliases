@@ -19,3 +19,4 @@ alias focuschrome='if test $(wmctrl -vxa chrome 2>&1 | wc -l) -eq 1; then google
 alias mysql_bytepages='mysql -h 23.253.63.76 -u byteadmin -p'
 alias mysql_rsweb2='mysql -h rsweb2.bytepro.net -u byteadmin -p'
 alias mysql_localhost='mysql -u root'
+alias muds='z tintin && tmux -f ~/.tmux_mud.conf'

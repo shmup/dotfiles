@@ -34,7 +34,7 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
 
 # editor
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/bin/vim -u $HOME/.vimrc"
 
 # django bash completion
 . ~/bin/django_bash_completion
@@ -143,7 +143,10 @@ if [ -d "$HOME/bin" ] ; then
 fi 
 
 export WORKON_HOME=~/.virtualenvs
-export GOPATH=~/code/go
+
+export GOPATH=$HOME/go
+PATH="$HOME/go/bin:$PATH"
+
 export LESS=-RFX
 source ~/.fzf.bash
 
@@ -174,4 +177,5 @@ function parse_git_branch {
 export PS1='\u@\h \[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)$ '
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

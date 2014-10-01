@@ -33,6 +33,8 @@ lib/CKEditor
 lib/Zend
 lib/byte
 lib/cms
+lib/cms.php
+lib/byte.php
 local/byte-shared-assets
 local/js/yui
 local/css/yui

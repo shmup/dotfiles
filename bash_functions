@@ -78,6 +78,13 @@ function cursive {
     coffee /home/jared/bin/cursive_unicode.coffee "$@" | xclip -selection clipboard
 }
 
+function shrug {
+    echo "¯\_(ツ)_/¯" | xclip -selection clipboard
+}
+function sadeyes {
+    echo "ಠ_ಠ" | xclip -selection clipboard
+}
+
 doing() {
   echo $(date "+%Y-%m-%d %H:%M:%S") - "$@" >> $HOME/.plan
 }

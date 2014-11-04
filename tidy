@@ -1,0 +1,11 @@
+indent-spaces: 4
+indent: auto
+quiet: yes
+tidy-mark: no
+show-errors: 0
+show-warnings: 0
+wrap: 1000
+
+# http://tidy.sourceforge.net/docs/quickref.html
+# http://www.w3.org/People/Raggett/tidy/
+# http://stackoverflow.com/a/22346560/463678

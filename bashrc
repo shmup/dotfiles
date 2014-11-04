@@ -143,7 +143,7 @@ if [ -d "$HOME/bin" ] ; then
 fi 
 
 export WORKON_HOME=~/.virtualenvs
-
+export HTML_TIDY=~/.tidy
 export GOPATH=$HOME/go
 PATH="$HOME/go/bin:$PATH"
 

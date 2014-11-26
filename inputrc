@@ -23,7 +23,7 @@ set mark-directories on
 set output-meta on
 set show-all-if-ambiguous on
 set visible-stats on
-
+set bell-style off
 set meta-flag on
 set input-meta on
 set convert-meta off

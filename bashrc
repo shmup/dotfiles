@@ -19,8 +19,8 @@ HISTFILESIZE=100000
 PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
 
 # phpbrew
-export PHPBRWE_SET_PROMPT=1
-source ~/.phpbrew/bashrc
+# export PHPBRWE_SET_PROMPT=1
+# source ~/.phpbrew/bashrc
 
 # android
 export ANDROID_HOME=/home/jared/.linuxbrew/opt/android-sdk
@@ -145,6 +145,7 @@ fi
 export WORKON_HOME=~/.virtualenvs
 export HTML_TIDY=~/.tidy
 export GOPATH=$HOME/go
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 PATH="$HOME/go/bin:$PATH"
 
 export LESS=-RFX

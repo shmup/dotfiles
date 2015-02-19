@@ -1,0 +1,2 @@
+#~/.npmrc
+prefix=~/.npm_modules

@@ -1,5 +1,9 @@
 {
+    "strict": true,
+    "browser": true,
+    "devel": true,
+    "jquery": true,
     "undef": true,
     "unused": true,
-    "predef": [ "ko", "$", "_" ]
+    "predef": [ "ko", "_", "FB", "store" ]
 }

@@ -36,6 +36,10 @@ function phpinfo {
     echo "<?php phpinfo(); ?>" > info.php
 }
 
+function jshintrc {
+    echo "{ \"esnext\": true }" > .jshintrc
+}
+
 function gitignore {
     echo -e ".idea
 *.un~
@@ -78,7 +82,7 @@ function html {
 }
 
 function rtvs {
-    ack -l --php $1 | ack -l -x $2 | ack -x -C 5 $1
+    ack -l --php "$1" | ack -l -x "$2" | ack -x -C 5 "$1"
 }
 
 function stock {
@@ -88,6 +92,7 @@ function stock {
 function cursive {
     coffee /home/jared/bin/cursive_unicode.coffee "$@" | xclip -selection clipboard
 }
+
 function cool {
     echo "😎 " | xclip -selection clipboard
 }

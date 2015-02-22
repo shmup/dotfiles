@@ -1,5 +1,6 @@
 {
     "undef": true,
     "unused": true,
-    "predef": [ "ko", "$", "_" ]
+    "predef": [ "ko", "$", "_", "console" ],
+    "esnetxt": true
 }

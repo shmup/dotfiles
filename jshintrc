@@ -5,7 +5,16 @@
     "jquery": true,
     "undef": true,
     "unused": true,
-    "predef": [ "ko", "$", "_", "console", "FB", "store", "CKEDITOR" ],
+    "predef": [ 
+        "ko",
+        "$",
+        "_",
+        "console",
+        "FB",
+        "store",
+        "CKEDITOR",
+        "require"
+    ],
     "esnext": true,
     "asi"     : true
 }

@@ -1,10 +1,11 @@
 {
-    "strict": true,
+    "strict": false,
     "browser": true,
     "devel": true,
     "jquery": true,
     "undef": true,
     "unused": true,
     "predef": [ "ko", "$", "_", "console", "FB", "store" ],
-    "esnetxt": true
+    "esnext": true,
+    "asi"     : true
 }

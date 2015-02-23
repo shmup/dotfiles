@@ -5,5 +5,5 @@
     "jquery": true,
     "undef": true,
     "unused": true,
-    "predef": [ "ko", "_", "FB", "store" ]
+    "predef": [ "ko", "_", "FB", "store", "CKEDITOR" ]
 }

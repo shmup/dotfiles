@@ -24,45 +24,41 @@ alias topRightQuarter ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}/2
 alias bottomLeftQuarter ${sox};${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 alias bottomRightQuarter ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 
-alias browser 'Google Chrome Canary'
-alias editor 'PhpStorm'
+bind l:ctrl;alt;cmd move ${rightHalf}
+bind h:ctrl;alt;cmd move ${leftHalf}
+bind k:ctrl;alt;cmd move ${topHalf}
+bind j:ctrl;alt;cmd move ${bottomHalf}
 
-bind right:ctrl;alt;cmd  move ${rightHalf}
-bind left:ctrl;alt;cmd   move ${leftHalf}
-bind up:ctrl;alt;cmd     move ${topHalf}
-bind down:ctrl;alt;cmd   move ${bottomHalf}
-
-bind left:shift;alt;cmd  move ${topLeftQuarter}
-bind up:shift;alt;cmd    move ${topRightQuarter}
-bind down:shift;alt;cmd  move ${bottomLeftQuarter}
-bind right:shift;alt;cmd move ${bottomRightQuarter}
+bind y:ctrl;alt;cmd move ${topLeftQuarter}
+bind u:ctrl;alt;cmd move ${topRightQuarter}
+bind b:ctrl;alt;cmd move ${bottomLeftQuarter}
+bind n:ctrl;alt;cmd move ${bottomRightQuarter}
 
 bind c:ctrl;alt;cmd move ${centered}
 bind m:ctrl;alt;cmd move ${fullscreen}
 
-bind right:ctrl;alt nudge +5% +0
-bind left:ctrl;alt  nudge -5% +0
-bind up:ctrl;alt    nudge +0 -5%
-bind down:ctrl;alt  nudge +0 +5%
+bind l:ctrl;alt nudge +5% +0
+bind h:ctrl;alt nudge -5% +0
+bind k:ctrl;alt nudge +0 -5%
+bind j:ctrl;alt nudge +0 +5%
 
-bind right:cmd;alt resize +5% +0
-bind left:cmd;alt  resize -5% +0
-bind up:cmd;alt    resize +0 -5%
-bind down:cmd;alt  resize +0 +5%
+bind l:cmd;alt resize +5% +0
+bind h:cmd;alt resize -5% +0
+bind k:cmd;alt resize +0 -5%
+bind j:cmd;alt resize +0 +5%
 
 bind e:cmd;alt hint ASDFGHJKLQWERTYUIOPCVBN
 
 alias hyper ctrl;shift;alt;cmd
 
 # Focus Bindings
-bind right:${hyper}    focus right
-bind left:${hyper}     focus left
-bind up:${hyper}       focus up
-bind down:${hyper}     focus down
+bind l:${hyper} focus right
+bind h:${hyper} focus left
+bind k:${hyper} focus up
+bind j:${hyper} focus down
 
 # App bindings
-bind e:${hyper} focus ${browser}
-bind u:${hyper} focus ${editor}
+bind u:${hyper} focus 'Google Chrome'
 bind m:${hyper} focus 'Mail'
-bind t:${hyper} focus 'iTerm'
+bind t:${hyper} focus 'Terminal'
 

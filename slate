@@ -61,4 +61,3 @@ bind j:${hyper} focus down
 bind u:${hyper} focus 'Google Chrome'
 bind m:${hyper} focus 'Mail'
 bind t:${hyper} focus 'Terminal'
-

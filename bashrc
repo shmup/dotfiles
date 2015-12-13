@@ -23,18 +23,18 @@ PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
 # source ~/.phpbrew/bashrc
 
 # android
-export ANDROID_HOME=/home/jared/.linuxbrew/opt/android-sdk
-export PATH=${PATH}:/home/jared/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools
+# export ANDROID_HOME=/home/jared/.linuxbrew/opt/android-sdk
+# export PATH=${PATH}:/home/jared/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools
 
 # npm
-export PATH=$PATH:$HOME/.npm_modules/bin
+# export PATH=$PATH:$HOME/.npm_modules/bin
 
 # brew
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+# export PATH="$HOME/.linuxbrew/bin:$PATH"
+# export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
 
 # editor
-export EDITOR="/usr/bin/vim -u $HOME/.vimrc"
+# export EDITOR="/usr/bin/vim -u $HOME/.vimrc"
 
 # django bash completion
 . ~/bin/django_bash_completion

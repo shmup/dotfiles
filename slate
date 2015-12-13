@@ -4,7 +4,7 @@ config defaultToCurrentScreen true
 # Shows app icons and background apps, spreads icons in the same place.
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
-config windowHintsSpread true
+onfig windowHintsSpread true
 
 # General aliases
 alias sox screenOriginX
@@ -36,6 +36,19 @@ bind n:ctrl;alt;cmd move ${bottomRightQuarter}
 
 bind c:ctrl;alt;cmd move ${centered}
 bind m:ctrl;alt;cmd move ${fullscreen}
+
+bind l:cmd;alt;ctrl move ${rightHalf}
+bind h:cmd;alt;ctrl move ${leftHalf}
+bind k:cmd;alt;ctrl move ${topHalf}
+bind j:cmd;alt;ctrl move ${bottomHalf}
+
+bind y:cmd;alt;ctrl move ${topLeftQuarter}
+bind u:cmd;alt;ctrl move ${topRightQuarter}
+bind b:cmd;alt;ctrl move ${bottomLeftQuarter}
+bind n:cmd;alt;ctrl move ${bottomRightQuarter}
+
+bind c:cmd;alt;ctrl move ${centered}
+bind m:cmd;alt;ctrl move ${fullscreen}
 
 bind l:ctrl;alt nudge +5% +0
 bind h:ctrl;alt nudge -5% +0

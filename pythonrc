@@ -4,7 +4,7 @@ from __future__ import print_function
 
 import json
 import sys
-import datetime
+import arrow
 
 from redis import StrictRedis as Redis
 
@@ -16,20 +16,17 @@ except ImportError:
     print("Module readline not available.")
 else:
     import rlcompleter
-    if 'libedit' in readline.__doc__:
-        readline.parse_and_bind("bind ^I rl_complete")
-    else:
-        readline.parse_and_bind("tab: complete")
+    readline.parse_and_bind("tab: complete")
 
 try:
-    from app import models
-    from django.conf import settings
+    from django.core.management import setup_environ
+    import settings
+    setup_environ(settings)
+
+    if settings.PINAX_ROOT:
+        import sys
+        from os.path import join
+        sys.path.insert(0, join(settings.PINAX_ROOT, "apps"))
+        sys.path.insert(0, join(settings.PROJECT_ROOT, "apps"))
 except:
-    print("\nCould not import Django modules.")
-else:
-    print("\nImported Django modules.")
-
-try:
-    from dateutil.parser import parse as parse_date
-except ImportError:
-    print("\nCould not import dateutil.")
+    pass

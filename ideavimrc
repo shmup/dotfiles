@@ -1,0 +1,29 @@
+let mapleader = " "
+
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase 
+set scrolloff=3
+set clipboard=unnamedplus,unnamed
+
+" These create newlines like o and O but stay in normal mode
+nmap zj o<Esc>k
+nmap zk O<Esc>j
+
+" better window changing
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" clipboard things
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+nmap <leader><leader> V
+nnoremap <silent> <leader>l :nohl<CR><C-l>
